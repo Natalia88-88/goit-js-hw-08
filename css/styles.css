@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: center;
+  padding: 24px;
+  list-style: none;
+  margin: 0;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  box-sizing: border-box;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+/* фон модального вікна */
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
