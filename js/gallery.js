@@ -90,18 +90,6 @@ function onGalleryClick(event) {
   event.preventDefault();
 
   const isImage = event.target.classList.contains("gallery-image");
-  if (!isImage) {
-    return;
-  }
-
-  const largeImageURL = event.target.dataset.source;
-  console.log("Велике зображення:", largeImageURL);
-}
-
-function onGalleryClick(event) {
-  event.preventDefault();
-
-  const isImage = event.target.classList.contains("gallery-image");
   if (!isImage) return;
 
   const largeImageURL = event.target.dataset.source;
